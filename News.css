@@ -1,0 +1,163 @@
+*{
+   margin: 0;
+   padding:0;
+   box-sizing:border-box;
+}
+body{
+  font-family:roboto;
+}
+h1{
+color:hsl(234, 29%, 20%) ;
+   font-weight:700;
+   font-size:3rem;
+   font-weight:700;
+}
+p{
+   color:hsl(235, 18%, 26%);
+   font-size:16px;
+   font-weight:300;
+}
+#user{
+   color:hsl(234, 29%, 20%) ;
+   font-size:18px;
+   font-weight:700;
+}
+#user p{
+   font-weight:bold;
+}
+#sign{
+      display:block;
+    }
+ #success{
+       display:none;
+    }
+.email{
+   width:300px;
+   margin:20px;
+   padding :15px;
+   border-style:solid;
+   border-width:1px;
+   border-radius:5px;
+   border-color:hsl(0, 0%,58%);
+   cursor:pointer;
+}
+.email:hover{
+   border-color:hsl(4, 100%, 67%);
+}
+.email:active{
+   border-color:hsl(4, 100%, 67%);
+}
+.email:focus{
+   border-color:hsl(4, 100%, 67%);
+}
+input[type=text]:hover{
+ background-color:rgba(4, 100%, 67%);
+ 
+}
+.p{
+margin-bottom:0;
+   margin-left:20px;
+}
+.error{
+   color: hsl(4, 100%, 67%);
+   float: right ;
+   margin-right:20px;
+   
+}
+.btn{
+   width:300px;
+   margin:20px;
+   padding:5px;
+   height: 50px;
+   background-color:hsl(234, 29%, 20%) ;
+   color:#fff;
+   border-style:none;
+   border-radius:5px;
+   cursor:pointer;
+   transition:0.5s ease;
+   
+}
+.btn:hover{
+   background-color: hsl(4, 100%, 67%);
+}
+.text{
+   margin:20px;
+   padding :10px;
+}
+.text h1{ 
+   margin-bottom:20px;
+}
+.text p{
+   margin-bottom:10px;
+}
+
+
+@media only screen and (min-width: 375px){
+    body{
+       background-color: hsl(235, 18%, 26%);
+    }
+    
+   .container{
+      display:flex;
+      flex-direction:row-reverse;
+      align-items:center;
+      justify-content:center;
+      background-color: hsl(0, 0%, 100%);
+       width:900px;
+       hight:4rem;
+       margin:5rem auto;
+      padding:2rem;
+      border-radius: 20px;
+   }
+   .form{
+      margin:15px;
+   }
+   #success{
+         background-color: hsl(0, 0%, 100%);
+       width:450px;
+       hight:4rem;
+       margin:4rem auto;
+      padding:3rem;
+      border-radius: 20px;
+      }
+      .contain p{
+       margin-top:20px;
+    }
+    .contain h1{
+       margin-top:20px;
+    }
+   
+   .desktop-only{
+   display:block;
+}
+ .mobile-only{
+      display:none;
+   }
+}
+@media only screen and (max-width: 375px){
+    .email .btn{
+       margin:25px;
+    }
+    .contain{
+       margin:20px;
+       margin-top:100px;
+       margin-bottom:10px;
+       
+    }
+    .contain p{
+       margin-top:20px;
+    }
+    .contain h1{
+       margin-top:20px;
+    }
+    #button {
+       margin-top:300px;
+       
+    }
+   .desktop-only{
+   display:none;
+}
+.mobile-only{
+      width: 360px;
+   }
+}
